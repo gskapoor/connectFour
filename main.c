@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 /*  Here is the current plan for the connect for program:
  *
@@ -29,10 +30,10 @@ char* init_board(){
 // different colored boards
 void print_board(char* board){
   for (int i = 0; i < 42; i++){
-    printf(board[i]);
+    printf("%c", board[i]);
 
     if (i % 7 == 0){
-      printf('\n');
+      printf("\n");
     }
   }
 }
